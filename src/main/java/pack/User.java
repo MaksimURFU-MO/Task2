@@ -1,17 +1,20 @@
+package pack;
+
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class User {
-    private LocalDate time;
+    private LocalDateTime time;
     private String nameCompany;
     private int weight;
 
-    User(LocalDate time, String nameCompany, int weight) {
+    public User(LocalDateTime time, String nameCompany, int weight) {
         this.time = time;
         this.nameCompany = nameCompany;
         this.weight = weight;
     }
 
-    public LocalDate getTime() {
+    public LocalDateTime getTime() {
         return time;
     }
     public String getNameCompany() {
@@ -21,7 +24,7 @@ public class User {
         return weight;
     }
 
-    public void setTime(LocalDate time) {
+    public void setTime(LocalDateTime time) {
         this.time = time;
     }
     public void setNameCompany(String nameCompany) {

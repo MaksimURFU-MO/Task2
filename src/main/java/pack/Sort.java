@@ -3,9 +3,8 @@ package pack;
 import java.util.List;
 import java.util.ArrayList;
 
-public class Main {
-    List<User> dataBase = new ArrayList<>();
-    public void BubbleSort(){
+public class Sort {
+    public static void bubbleSort(List<User> dataBase){
         int len = dataBase.size();
         for(int i = 0; i < len - 1; i++){
             boolean swap = false;
